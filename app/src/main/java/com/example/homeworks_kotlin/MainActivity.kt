@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             val res: Int = a - b
             tv1.text = "Результат вычитания равен: $res"
         }
-        var butmulti = findViewById<Button>(R.id.butsub)
+        var butmulti = findViewById<Button>(R.id.butmulti)
         butmulti.setOnClickListener {
             val res: Int = a * b
             tv1.text = "Результат умножения равен: $res"
