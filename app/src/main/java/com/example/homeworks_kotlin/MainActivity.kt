@@ -8,9 +8,8 @@ import com.example.homeworks_kotlin.R
 
 class MainActivity : AppCompatActivity() {
 
-    val a: Int = 34456
+    val a: Double = 34456.5
     val b: Int = 32456
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -18,17 +17,17 @@ class MainActivity : AppCompatActivity() {
         tv1.text = "$a и $b"
         var butsum = findViewById<Button>(R.id.butsum)
         butsum.setOnClickListener {
-            val res: Int  = a + b
+            val res: Double = a + b.toDouble()
             tv1.text = "Результат сложения равен: $res"
         }
         var butsub = findViewById<Button>(R.id.butsub)
         butsub.setOnClickListener {
-            val res: Int = a - b
+            val res: Double = a - b.toDouble()
             tv1.text = "Результат вычитания равен: $res"
         }
         var butmulti = findViewById<Button>(R.id.butmulti)
         butmulti.setOnClickListener {
-            val res: Int = a * b
+            val res: Double = a * b.toDouble()
             tv1.text = "Результат умножения равен: $res"
         }
     }
